@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantenar {
+    height: 70vh;
+    width: 48.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+
+}
+
+
+.img {
+    height: 70vh;
+}
+
+.desktop-img {
+    display: block;
+    height: auto;
+    width: 300px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.mobil-img {
+    width: 90vw;
+    border-radius: 8px 8px 0 0;
+}
+
+.text {
+    height: 70vh;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 19px;
+    align-items: start;
+}
+
+
+.text p,
+h1 {
+    white-space: pre;
+}
+
+.text h4 {
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: rgb(78, 78, 78);
+}
+
+.text h1 {
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+}
+
+.text p {
+    color: rgb(78, 78, 78);
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1.7px;
+    font-family: sans-serif;
+}
+
+.text .price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.text .price span {
+    font-size: 2.2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: rgb(50, 112, 61);
+}
+
+.text .price del {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(78, 78, 78);
+
+}
+
+button {
+    height: 6vh;
+    width: 19vw;
+    background-color: rgb(3, 36, 3);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-family: sans-serif;
+}
+
+svg {
+    height: 20px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cantenar {
+        margin: 2px auto;
+        height: 95vh;
+        width: 90%;
+        flex-direction: column;
+        gap: 0px;
+        padding: 2px;
+        border-radius: 8px;
+    }
+
+    .text {
+        justify-content: center;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
