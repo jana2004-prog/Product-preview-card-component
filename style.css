@@ -25,7 +25,7 @@ body {
 
 
 .img {
-    height: 70vh;
+    height: 100%;
 }
 
 .desktop-img {
@@ -42,7 +42,7 @@ body {
 }
 
 .text {
-    height: 70vh;
+    height: 100%;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@ svg {
     width: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .cantenar {
         margin: 2px auto;
         height: auto;
@@ -139,4 +139,17 @@ svg {
     button {
         width: 100%;
     }
+}
+@media  (min-width: 767px) and (max-width:1024px){
+      .cantenar{
+        width: 85vw;
+        height: 60vh;
+      }
+      .desktop-img{
+        height: 100%;
+        width: 350px;
+      }
+      button{
+        width: 95%;
+      }
 }
