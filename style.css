@@ -30,13 +30,14 @@ body {
 
 .desktop-img {
     display: block;
-    height: auto;
+    height: 100%;
     width: 300px;
     border-radius: 8px 0px 0px 8px;
 }
 
 .mobil-img {
     width: 90vw;
+    height: 100%;
     border-radius: 8px 8px 0 0;
 }
 
@@ -122,8 +123,8 @@ svg {
 @media only screen and (max-width: 600px) {
     .cantenar {
         margin: 2px auto;
-        height: 95vh;
-        width: 90%;
+        height: auto;
+        width: 94%;
         flex-direction: column;
         gap: 0px;
         padding: 2px;
